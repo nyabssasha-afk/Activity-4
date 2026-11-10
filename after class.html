@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            sans-serif;
+            min-height: 100vh;
+            color: white;
+
+            /* Background image */
+            background-image: radial-gradient(circle at 20% 30%,
+
+                    rgba(255, 255, 0.12) 2px,
+                    transparent 3px),
+                linear-gradient(135deg, #141e46, #5378a8);
+
+            background-repeat: repeat;
+            background-position: center;
+            background-size: 45px 45px;
+            cover;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 35px;
+        }
+
+        .search {
+            text-align: center;
+            margin: 20px;
+
+        }
+
+        .search input {
+            padding: 13px;
+            width: 230px;
+            border: none;
+            border-radius: 20px;
+            outline: none;
+        }
+
+        .search button {
+            padding: 13px 20px;
+            border: none;
+            border-radius: 20px;
+            background: #ffca58;
+            cursor: pointer;
+        }
+
+        .weather-card {
+            background:
+                rgba(0, 0, 0.2);
+        }
+
+        .weather-icon {
+            font-size: 75px;
+            animation: float 3s;
+            ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translate(0);
+            }
+
+            50% {
+                transform:
+                    translate(-15px);
+            }
+        }
+
+        .temprature {
+            font-size: 55px;
+            margin: 10px;
+        }
+
+        .forecast {
+            display: flex;
+            justify-self: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px;
+
+        }
+
+        .day {
+            background:
+                rgba(255, 255, 255, 255, 0.13);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            width: 125px;
+            transition: 0.3s;
+        }
+
+        .day:hover {
+            transform: translate(-8px);
+            background:
+                rgba(255, 255, 0.25);
+        }
+
+        .day span {
+            display: block;
+            font-size: 30px;
+            margin: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Weatherly</h1>
+        <p>Your daily weather companion</p>
+    </header>
+
+    <div class="search">
+        <input type="text" id="city" placeholder="enter city" name="....">
+        <button onclick="searchweather()">
+            <search></search>
+        </button>
+    </div>
+
+    <div class="weather-card">
+        <h2 id="location">Nairobi,Kenya</h2>
+
+        <div class="weather-icon"></div>
+
+        <div class="temprature">25 degrees celcious</div>
+
+        <p>Sunny</p>
+        <p>Feels like 27 degrees</p>
+        <br>
+        <p>Humidity: 60%</p>
+        <p>>Wind:12 km/h</p>
+    </div>
+
+    <div class="day">
+        Tuesday
+        <span>sunlight</span>
+        24 degrees celcious
+    </div>
+
+    <footer>
+        <p>Weatherly @ 2026 | made with Love</p>
+    </footer>
+    <script>
+        function searchweather() {
+            let city = document.getElementBy
+
+        }
+    </script>
+
+
+</body>
+
+</html>
